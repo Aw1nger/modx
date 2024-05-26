@@ -1,0 +1,47 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: modx_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_DATABASE: modx
+      MYSQL_USER: modx
+      MYSQL_PASSWORD: modx
+    volumes:
+      - db_data:/var/lib/mysql
+
+  modx:
+    build: .
+    container_name: modx_app
+    restart: unless-stopped
+    environment:
+      MODX_DB_HOST: db
+      MODX_DB_NAME: modx
+      MODX_DB_USER: modx
+      MODX_DB_PASSWORD: modx
+    volumes:
+      - modx_data:/var/www/html
+    depends_on:
+      - db
+    expose:
+      - 80
+
+  nginx:
+    image: nginx:latest
+    container_name: modx_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - modx_data:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - modx
+
+volumes:
+  db_data:
+  modx_data:
