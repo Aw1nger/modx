@@ -24,7 +24,7 @@ services:
       MODX_DB_USER: modx
       MODX_DB_PASSWORD: modx
     volumes:
-      - modx_data:/var/www/html
+      - modx:/var/www/html
     depends_on:
       - db
     expose:
@@ -37,11 +37,11 @@ services:
     ports:
       - "80:80"
     volumes:
-      - modx_data:/var/www/html
+      - modx:/var/www/html
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - modx
 
 volumes:
   db_data:
-  modx_data:
+  modx:
