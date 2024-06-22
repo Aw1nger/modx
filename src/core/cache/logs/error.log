@@ -1,0 +1,1054 @@
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/vendor/james-heinrich/phpthumb/phpthumb.class.php : 1818) PHP warning: getimagesize(/var/www/html/assets/gallery/1/2.mp4): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/2.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/2.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/2.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/2.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/2.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/2.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/2.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/2.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/2.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root (/var/www/html/) to $filename (/var/www/html/assets/gallery/1/2.mp4) resulting in ($AbsoluteFilename = "/var/www/html/assets/gallery/1/2.mp4") in file "phpthumb.class.php" on line 1409
+    [18] => resolvePath: /var/www/html/assets/gallery/1/2.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [19] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/2.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [20] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [21] => resolvePath: stop at path=/var/www/html/assets/gallery/1/2.mp4 in file "phpthumb.class.php" on line 1281
+    [22] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [23] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/2.mp4" in file "phpthumb.class.php" on line 988
+    [24] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [25] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/2.mp4" = "2a869e289943914219846986286e065a" in file "phpthumb.class.php" on line 3693
+    [26] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [27] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [28] => getimagesize(/var/www/html/assets/gallery/1/2.mp4) failed in file "phpthumb.class.php" on line 3498
+    [29] => getimagesize("/var/www/html/assets/gallery/1/2.mp4") failed in file "phpthumb.class.php" on line 3528
+    [30] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [31] => phpThumb_tempnam() returning "/tmp/pThumb6aYHXD" in file "phpthumb.class.php" on line 4589
+    [32] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [33] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [34] => getimagesize(/var/www/html/assets/gallery/1/2.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [35] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [36] => getimagesize(/var/www/html/assets/gallery/1/2.mp4) failed in file "phpthumb.class.php" on line 2004
+    [37] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [38] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/2.mp4[0]' -resize '100x100' png:'/tmp/pThumb6aYHXD' 2>&1) in file "phpthumb.class.php" on line 2410
+    [39] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [40] => deleting "/tmp/pThumb6aYHXD" in file "phpthumb.class.php" on line 2447
+    [41] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [42] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [43] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [44] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [45] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [46] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [47] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/2.mp4) in file "phpthumb.class.php" on line 3773
+    [48] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/2.mp4) failed in file "phpthumb.class.php" on line 3827
+    [49] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [50] => cannot fopen(/var/www/html/assets/gallery/1/2.mp4) in file "phpthumb.class.php" on line 3846
+    [51] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [52] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [53] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [54] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [55] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_2.mp4.5c5f03d221bf405d2dbd9e4bb3cd8eaa.jpeg
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_2.mp4.5c5f03d221bf405d2dbd9e4bb3cd8eaa.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/1.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/1.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/1.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/1.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/1.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/1.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/1.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/1.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/1.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => resolvePath: /var/www/html/assets/gallery/1/1.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [18] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/1.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [19] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [20] => resolvePath: stop at path=/var/www/html/assets/gallery/1/1.mp4 in file "phpthumb.class.php" on line 1281
+    [21] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [22] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/1.mp4" in file "phpthumb.class.php" on line 988
+    [23] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/1.mp4" = "2cfb51c4a27a809795e9b854c7ad7ea8" in file "phpthumb.class.php" on line 3693
+    [24] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [25] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [26] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 3498
+    [27] => getimagesize("/var/www/html/assets/gallery/1/1.mp4") failed in file "phpthumb.class.php" on line 3528
+    [28] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [29] => phpThumb_tempnam() returning "/tmp/pThumb3TI3Bv" in file "phpthumb.class.php" on line 4589
+    [30] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [31] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [32] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [33] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [34] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 2004
+    [35] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [36] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/1.mp4[0]' -resize '100x100' png:'/tmp/pThumb3TI3Bv' 2>&1) in file "phpthumb.class.php" on line 2410
+    [37] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [38] => deleting "/tmp/pThumb3TI3Bv" in file "phpthumb.class.php" on line 2447
+    [39] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [40] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [41] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [42] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [43] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [44] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [45] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/1.mp4) in file "phpthumb.class.php" on line 3773
+    [46] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 3827
+    [47] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [48] => attempting ImageCreateFromStringReplacement($rawimagedata (584809 bytes), true) in file "phpthumb.class.php" on line 3849
+    [49] => ImageCreateFromStringReplacement() calling built-in imagecreatefromstring() in file "phpthumb.class.php" on line 4459
+    [50] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [51] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [52] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [53] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [54] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_1.mp4.459da28edff3bfa1d3d9c71d11438a5e.jpeg
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_1.mp4.459da28edff3bfa1d3d9c71d11438a5e.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/vendor/james-heinrich/phpthumb/phpthumb.class.php : 1818) PHP warning: getimagesize(/var/www/html/assets/gallery/1/3.mp4): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/3.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/3.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/3.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/3.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/3.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/3.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/3.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/3.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/3.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root (/var/www/html/) to $filename (/var/www/html/assets/gallery/1/3.mp4) resulting in ($AbsoluteFilename = "/var/www/html/assets/gallery/1/3.mp4") in file "phpthumb.class.php" on line 1409
+    [18] => resolvePath: /var/www/html/assets/gallery/1/3.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [19] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/3.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [20] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [21] => resolvePath: stop at path=/var/www/html/assets/gallery/1/3.mp4 in file "phpthumb.class.php" on line 1281
+    [22] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [23] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/3.mp4" in file "phpthumb.class.php" on line 988
+    [24] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [25] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/3.mp4" = "0c62ab56ad5496319ce624508624791c" in file "phpthumb.class.php" on line 3693
+    [26] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [27] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [28] => getimagesize(/var/www/html/assets/gallery/1/3.mp4) failed in file "phpthumb.class.php" on line 3498
+    [29] => getimagesize("/var/www/html/assets/gallery/1/3.mp4") failed in file "phpthumb.class.php" on line 3528
+    [30] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [31] => phpThumb_tempnam() returning "/tmp/pThumbjF6uOI" in file "phpthumb.class.php" on line 4589
+    [32] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [33] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [34] => getimagesize(/var/www/html/assets/gallery/1/3.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [35] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [36] => getimagesize(/var/www/html/assets/gallery/1/3.mp4) failed in file "phpthumb.class.php" on line 2004
+    [37] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [38] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/3.mp4[0]' -resize '100x100' png:'/tmp/pThumbjF6uOI' 2>&1) in file "phpthumb.class.php" on line 2410
+    [39] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [40] => deleting "/tmp/pThumbjF6uOI" in file "phpthumb.class.php" on line 2447
+    [41] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [42] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [43] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [44] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [45] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [46] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [47] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/3.mp4) in file "phpthumb.class.php" on line 3773
+    [48] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/3.mp4) failed in file "phpthumb.class.php" on line 3827
+    [49] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [50] => cannot fopen(/var/www/html/assets/gallery/1/3.mp4) in file "phpthumb.class.php" on line 3846
+    [51] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [52] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [53] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [54] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [55] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_3.mp4.0267f17dd1ff272ba98e4b4de16cfad5.jpeg
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_3.mp4.0267f17dd1ff272ba98e4b4de16cfad5.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/vendor/james-heinrich/phpthumb/phpthumb.class.php : 1818) PHP warning: getimagesize(/var/www/html/assets/gallery/1/4.mp4): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/4.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/4.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/4.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/4.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/4.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/4.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/4.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/4.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/4.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root (/var/www/html/) to $filename (/var/www/html/assets/gallery/1/4.mp4) resulting in ($AbsoluteFilename = "/var/www/html/assets/gallery/1/4.mp4") in file "phpthumb.class.php" on line 1409
+    [18] => resolvePath: /var/www/html/assets/gallery/1/4.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [19] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/4.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [20] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [21] => resolvePath: stop at path=/var/www/html/assets/gallery/1/4.mp4 in file "phpthumb.class.php" on line 1281
+    [22] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [23] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/4.mp4" in file "phpthumb.class.php" on line 988
+    [24] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [25] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/4.mp4" = "0e76ec8285b4a512b48e2e113aa5743b" in file "phpthumb.class.php" on line 3693
+    [26] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [27] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [28] => getimagesize(/var/www/html/assets/gallery/1/4.mp4) failed in file "phpthumb.class.php" on line 3498
+    [29] => getimagesize("/var/www/html/assets/gallery/1/4.mp4") failed in file "phpthumb.class.php" on line 3528
+    [30] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [31] => phpThumb_tempnam() returning "/tmp/pThumbp3CCou" in file "phpthumb.class.php" on line 4589
+    [32] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [33] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [34] => getimagesize(/var/www/html/assets/gallery/1/4.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [35] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [36] => getimagesize(/var/www/html/assets/gallery/1/4.mp4) failed in file "phpthumb.class.php" on line 2004
+    [37] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [38] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/4.mp4[0]' -resize '100x100' png:'/tmp/pThumbp3CCou' 2>&1) in file "phpthumb.class.php" on line 2410
+    [39] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [40] => deleting "/tmp/pThumbp3CCou" in file "phpthumb.class.php" on line 2447
+    [41] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [42] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [43] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [44] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [45] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [46] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [47] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/4.mp4) in file "phpthumb.class.php" on line 3773
+    [48] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/4.mp4) failed in file "phpthumb.class.php" on line 3827
+    [49] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [50] => cannot fopen(/var/www/html/assets/gallery/1/4.mp4) in file "phpthumb.class.php" on line 3846
+    [51] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [52] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [53] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [54] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [55] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_4.mp4.786ecacd475054418264202ed81ca623.jpeg
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_4.mp4.786ecacd475054418264202ed81ca623.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/vendor/james-heinrich/phpthumb/phpthumb.class.php : 1818) PHP warning: getimagesize(/var/www/html/assets/gallery/1/6.mp4): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/6.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/6.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/6.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/6.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/6.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/6.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/6.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/6.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/6.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root (/var/www/html/) to $filename (/var/www/html/assets/gallery/1/6.mp4) resulting in ($AbsoluteFilename = "/var/www/html/assets/gallery/1/6.mp4") in file "phpthumb.class.php" on line 1409
+    [18] => resolvePath: /var/www/html/assets/gallery/1/6.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [19] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/6.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [20] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [21] => resolvePath: stop at path=/var/www/html/assets/gallery/1/6.mp4 in file "phpthumb.class.php" on line 1281
+    [22] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [23] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/6.mp4" in file "phpthumb.class.php" on line 988
+    [24] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [25] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/6.mp4" = "b52ca084a7840a23cd81d6f9d4797d1e" in file "phpthumb.class.php" on line 3693
+    [26] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [27] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [28] => getimagesize(/var/www/html/assets/gallery/1/6.mp4) failed in file "phpthumb.class.php" on line 3498
+    [29] => getimagesize("/var/www/html/assets/gallery/1/6.mp4") failed in file "phpthumb.class.php" on line 3528
+    [30] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [31] => phpThumb_tempnam() returning "/tmp/pThumbswLDIs" in file "phpthumb.class.php" on line 4589
+    [32] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [33] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [34] => getimagesize(/var/www/html/assets/gallery/1/6.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [35] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [36] => getimagesize(/var/www/html/assets/gallery/1/6.mp4) failed in file "phpthumb.class.php" on line 2004
+    [37] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [38] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/6.mp4[0]' -resize '100x100' png:'/tmp/pThumbswLDIs' 2>&1) in file "phpthumb.class.php" on line 2410
+    [39] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [40] => deleting "/tmp/pThumbswLDIs" in file "phpthumb.class.php" on line 2447
+    [41] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [42] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [43] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [44] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [45] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [46] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [47] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/6.mp4) in file "phpthumb.class.php" on line 3773
+    [48] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/6.mp4) failed in file "phpthumb.class.php" on line 3827
+    [49] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [50] => cannot fopen(/var/www/html/assets/gallery/1/6.mp4) in file "phpthumb.class.php" on line 3846
+    [51] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [52] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [53] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [54] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [55] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_6.mp4.5797b83cf50c9acaca6127b824dba365.jpeg
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_6.mp4.5797b83cf50c9acaca6127b824dba365.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/7.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/7.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/7.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/7.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/7.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/7.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/7.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/7.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/7.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => resolvePath: /var/www/html/assets/gallery/1/7.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [18] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/7.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [19] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [20] => resolvePath: stop at path=/var/www/html/assets/gallery/1/7.mp4 in file "phpthumb.class.php" on line 1281
+    [21] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [22] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/7.mp4" in file "phpthumb.class.php" on line 988
+    [23] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/7.mp4" = "2e359585fd1c60145d1066ffca536119" in file "phpthumb.class.php" on line 3693
+    [24] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [25] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [26] => getimagesize(/var/www/html/assets/gallery/1/7.mp4) failed in file "phpthumb.class.php" on line 3498
+    [27] => getimagesize("/var/www/html/assets/gallery/1/7.mp4") failed in file "phpthumb.class.php" on line 3528
+    [28] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [29] => phpThumb_tempnam() returning "/tmp/pThumbaxyYaK" in file "phpthumb.class.php" on line 4589
+    [30] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [31] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [32] => getimagesize(/var/www/html/assets/gallery/1/7.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [33] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [34] => getimagesize(/var/www/html/assets/gallery/1/7.mp4) failed in file "phpthumb.class.php" on line 2004
+    [35] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [36] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/7.mp4[0]' -resize '100x100' png:'/tmp/pThumbaxyYaK' 2>&1) in file "phpthumb.class.php" on line 2410
+    [37] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [38] => deleting "/tmp/pThumbaxyYaK" in file "phpthumb.class.php" on line 2447
+    [39] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [40] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [41] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [42] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [43] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [44] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [45] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/7.mp4) in file "phpthumb.class.php" on line 3773
+    [46] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/7.mp4) failed in file "phpthumb.class.php" on line 3827
+    [47] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [48] => attempting ImageCreateFromStringReplacement($rawimagedata (740110 bytes), true) in file "phpthumb.class.php" on line 3849
+    [49] => ImageCreateFromStringReplacement() calling built-in imagecreatefromstring() in file "phpthumb.class.php" on line 4459
+    [50] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [51] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [52] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [53] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [54] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_7.mp4.d5bdd244d5c87849465e61703492b223.jpeg
+[2024-06-06 11:30:30] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_7.mp4.d5bdd244d5c87849465e61703492b223.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/vendor/james-heinrich/phpthumb/phpthumb.class.php : 1818) PHP warning: getimagesize(/var/www/html/assets/gallery/1/5.mp4): failed to open stream: No such file or directory
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/5.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/5.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/5.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/5.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/5.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/5.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/5.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/5.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/5.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root (/var/www/html/) to $filename (/var/www/html/assets/gallery/1/5.mp4) resulting in ($AbsoluteFilename = "/var/www/html/assets/gallery/1/5.mp4") in file "phpthumb.class.php" on line 1409
+    [18] => resolvePath: /var/www/html/assets/gallery/1/5.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [19] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/5.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [20] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [21] => resolvePath: stop at path=/var/www/html/assets/gallery/1/5.mp4 in file "phpthumb.class.php" on line 1281
+    [22] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [23] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/5.mp4" in file "phpthumb.class.php" on line 988
+    [24] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [25] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/5.mp4" = "0592f5015c7bf1fdf4afd5931c414b3e" in file "phpthumb.class.php" on line 3693
+    [26] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [27] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [28] => getimagesize(/var/www/html/assets/gallery/1/5.mp4) failed in file "phpthumb.class.php" on line 3498
+    [29] => getimagesize("/var/www/html/assets/gallery/1/5.mp4") failed in file "phpthumb.class.php" on line 3528
+    [30] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [31] => phpThumb_tempnam() returning "/tmp/pThumbMhv519" in file "phpthumb.class.php" on line 4589
+    [32] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [33] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [34] => getimagesize(/var/www/html/assets/gallery/1/5.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [35] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [36] => getimagesize(/var/www/html/assets/gallery/1/5.mp4) failed in file "phpthumb.class.php" on line 2004
+    [37] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [38] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/5.mp4[0]' -resize '100x100' png:'/tmp/pThumbMhv519' 2>&1) in file "phpthumb.class.php" on line 2410
+    [39] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [40] => deleting "/tmp/pThumbMhv519" in file "phpthumb.class.php" on line 2447
+    [41] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [42] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [43] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [44] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [45] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [46] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [47] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/5.mp4) in file "phpthumb.class.php" on line 3773
+    [48] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/5.mp4) failed in file "phpthumb.class.php" on line 3827
+    [49] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [50] => cannot fopen(/var/www/html/assets/gallery/1/5.mp4) in file "phpthumb.class.php" on line 3846
+    [51] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [52] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [53] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [54] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [55] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_5.mp4.e960065b7aa2770bbb5c21a6c3fff2ed.jpeg
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_5.mp4.e960065b7aa2770bbb5c21a6c3fff2ed.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/vendor/james-heinrich/phpthumb/phpthumb.class.php : 1818) PHP warning: getimagesize(/var/www/html/assets/gallery/1/9.mp4): failed to open stream: No such file or directory
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/9.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/9.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/9.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/9.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/9.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/9.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/9.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/9.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/9.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root (/var/www/html/) to $filename (/var/www/html/assets/gallery/1/9.mp4) resulting in ($AbsoluteFilename = "/var/www/html/assets/gallery/1/9.mp4") in file "phpthumb.class.php" on line 1409
+    [18] => resolvePath: /var/www/html/assets/gallery/1/9.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [19] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/9.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [20] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [21] => resolvePath: stop at path=/var/www/html/assets/gallery/1/9.mp4 in file "phpthumb.class.php" on line 1281
+    [22] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [23] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/9.mp4" in file "phpthumb.class.php" on line 988
+    [24] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [25] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/9.mp4" = "3e88690aed8ff8570364a10adc5795f3" in file "phpthumb.class.php" on line 3693
+    [26] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [27] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [28] => getimagesize(/var/www/html/assets/gallery/1/9.mp4) failed in file "phpthumb.class.php" on line 3498
+    [29] => getimagesize("/var/www/html/assets/gallery/1/9.mp4") failed in file "phpthumb.class.php" on line 3528
+    [30] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [31] => phpThumb_tempnam() returning "/tmp/pThumb0pGJ0C" in file "phpthumb.class.php" on line 4589
+    [32] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [33] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [34] => getimagesize(/var/www/html/assets/gallery/1/9.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [35] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [36] => getimagesize(/var/www/html/assets/gallery/1/9.mp4) failed in file "phpthumb.class.php" on line 2004
+    [37] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [38] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/9.mp4[0]' -resize '100x100' png:'/tmp/pThumb0pGJ0C' 2>&1) in file "phpthumb.class.php" on line 2410
+    [39] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [40] => deleting "/tmp/pThumb0pGJ0C" in file "phpthumb.class.php" on line 2447
+    [41] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [42] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [43] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [44] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [45] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [46] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [47] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/9.mp4) in file "phpthumb.class.php" on line 3773
+    [48] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/9.mp4) failed in file "phpthumb.class.php" on line 3827
+    [49] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [50] => cannot fopen(/var/www/html/assets/gallery/1/9.mp4) in file "phpthumb.class.php" on line 3846
+    [51] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [52] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [53] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [54] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [55] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_9.mp4.020807d536e837ba7236266c284db6cc.jpeg
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_9.mp4.020807d536e837ba7236266c284db6cc.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/8.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/8.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/8.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/8.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/8.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/8.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/8.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/8.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/8.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => resolvePath: /var/www/html/assets/gallery/1/8.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [18] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/8.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [19] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [20] => resolvePath: stop at path=/var/www/html/assets/gallery/1/8.mp4 in file "phpthumb.class.php" on line 1281
+    [21] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [22] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/8.mp4" in file "phpthumb.class.php" on line 988
+    [23] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/8.mp4" = "4dd434b9ad2b43be96d3fb3e5092d2a2" in file "phpthumb.class.php" on line 3693
+    [24] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [25] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [26] => getimagesize(/var/www/html/assets/gallery/1/8.mp4) failed in file "phpthumb.class.php" on line 3498
+    [27] => getimagesize("/var/www/html/assets/gallery/1/8.mp4") failed in file "phpthumb.class.php" on line 3528
+    [28] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [29] => phpThumb_tempnam() returning "/tmp/pThumbA4JdgH" in file "phpthumb.class.php" on line 4589
+    [30] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [31] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [32] => getimagesize(/var/www/html/assets/gallery/1/8.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [33] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [34] => getimagesize(/var/www/html/assets/gallery/1/8.mp4) failed in file "phpthumb.class.php" on line 2004
+    [35] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [36] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/8.mp4[0]' -resize '100x100' png:'/tmp/pThumbA4JdgH' 2>&1) in file "phpthumb.class.php" on line 2410
+    [37] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [38] => deleting "/tmp/pThumbA4JdgH" in file "phpthumb.class.php" on line 2447
+    [39] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [40] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [41] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [42] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [43] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [44] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [45] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/8.mp4) in file "phpthumb.class.php" on line 3773
+    [46] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/8.mp4) failed in file "phpthumb.class.php" on line 3827
+    [47] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [48] => attempting ImageCreateFromStringReplacement($rawimagedata (1552491 bytes), true) in file "phpthumb.class.php" on line 3849
+    [49] => ImageCreateFromStringReplacement() calling built-in imagecreatefromstring() in file "phpthumb.class.php" on line 4459
+    [50] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [51] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [52] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [53] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [54] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_8.mp4.72f85671f1517527414e4ea6e6dfcd84.jpeg
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_8.mp4.72f85671f1517527414e4ea6e6dfcd84.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/10.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/10.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/10.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/10.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/10.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/10.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/10.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/10.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/10.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => resolvePath: /var/www/html/assets/gallery/1/10.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [18] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/10.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [19] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [20] => resolvePath: stop at path=/var/www/html/assets/gallery/1/10.mp4 in file "phpthumb.class.php" on line 1281
+    [21] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [22] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/10.mp4" in file "phpthumb.class.php" on line 988
+    [23] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/10.mp4" = "a9cef120adaddea77f3e5b8b356d7761" in file "phpthumb.class.php" on line 3693
+    [24] => SetCacheFilename() _par set from md5(_farC_zc1_h100_w100_dpi150) in file "phpthumb.class.php" on line 3732
+    [25] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [26] => getimagesize(/var/www/html/assets/gallery/1/10.mp4) failed in file "phpthumb.class.php" on line 3498
+    [27] => getimagesize("/var/www/html/assets/gallery/1/10.mp4") failed in file "phpthumb.class.php" on line 3528
+    [28] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [29] => phpThumb_tempnam() returning "/tmp/pThumbroubly" in file "phpthumb.class.php" on line 4589
+    [30] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [31] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [32] => getimagesize(/var/www/html/assets/gallery/1/10.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [33] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [34] => getimagesize(/var/www/html/assets/gallery/1/10.mp4) failed in file "phpthumb.class.php" on line 2004
+    [35] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [36] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/10.mp4[0]' -resize '100x100' png:'/tmp/pThumbroubly' 2>&1) in file "phpthumb.class.php" on line 2410
+    [37] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [38] => deleting "/tmp/pThumbroubly" in file "phpthumb.class.php" on line 2447
+    [39] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [40] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [41] => SetOrientationDependantWidthHeight() setting w="100", h="100" in file "phpthumb.class.php" on line 3481
+    [42] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [43] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [44] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [45] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/10.mp4) in file "phpthumb.class.php" on line 3773
+    [46] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/10.mp4) failed in file "phpthumb.class.php" on line 3827
+    [47] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [48] => attempting ImageCreateFromStringReplacement($rawimagedata (1315643 bytes), true) in file "phpthumb.class.php" on line 3849
+    [49] => ImageCreateFromStringReplacement() calling built-in imagecreatefromstring() in file "phpthumb.class.php" on line 4459
+    [50] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [51] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [52] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [53] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [54] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_10.mp4.4ef71e9167f07af7b6efba17b0d0acc3.jpeg
+[2024-06-06 11:30:31] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_10.mp4.4ef71e9167f07af7b6efba17b0d0acc3.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:44:33] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:44:33] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:44:51] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:44:51] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:47:41] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:47:41] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:48:14] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:48:14] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:48:24] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/1.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/1.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/1.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/1.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/1.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/1.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/1.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/1.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/1.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat staying as "png" because $this->f (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1093
+    [16] => $this->thumbnailQuality set to "75" in file "phpthumb.class.php" on line 1100
+    [17] => resolvePath: /var/www/html/assets/gallery/1/1.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [18] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/1.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [19] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [20] => resolvePath: stop at path=/var/www/html/assets/gallery/1/1.mp4 in file "phpthumb.class.php" on line 1281
+    [21] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [22] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/1.mp4" in file "phpthumb.class.php" on line 988
+    [23] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/1.mp4" = "2cfb51c4a27a809795e9b854c7ad7ea8" in file "phpthumb.class.php" on line 3693
+    [24] => SetCacheFilename() _par set from md5(_farC_dpi150) in file "phpthumb.class.php" on line 3732
+    [25] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [26] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 3498
+    [27] => getimagesize("/var/www/html/assets/gallery/1/1.mp4") failed in file "phpthumb.class.php" on line 3528
+    [28] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [29] => phpThumb_tempnam() returning "/tmp/pThumb33VZOB" in file "phpthumb.class.php" on line 4589
+    [30] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [31] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [32] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [33] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [34] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 2004
+    [35] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [36] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/1.mp4[0]' png:'/tmp/pThumb33VZOB' 2>&1) in file "phpthumb.class.php" on line 2410
+    [37] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [38] => deleting "/tmp/pThumb33VZOB" in file "phpthumb.class.php" on line 2447
+    [39] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [40] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [41] => SetOrientationDependantWidthHeight() setting w="0", h="0" in file "phpthumb.class.php" on line 3481
+    [42] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [43] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [44] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [45] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/1.mp4) in file "phpthumb.class.php" on line 3773
+    [46] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 3827
+    [47] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [48] => attempting ImageCreateFromStringReplacement($rawimagedata (584809 bytes), true) in file "phpthumb.class.php" on line 3849
+    [49] => ImageCreateFromStringReplacement() calling built-in imagecreatefromstring() in file "phpthumb.class.php" on line 4459
+    [50] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [51] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [52] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [53] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [54] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:48:24] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_1.mp4.9c6dec9f446bc757bd538ac18b7e295a.jpeg
+[2024-06-06 11:48:24] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_1.mp4.9c6dec9f446bc757bd538ac18b7e295a.jpeg): failed to open stream: No such file or directory
+[2024-06-06 11:48:25] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 181) [phpThumbOf] Could not generate thumbnail: /var/www/html/assets/gallery/1/1.mp4 - Debug: Array
+(
+    [0] => phpThumb() v1.7.22-202312071641 in file "phpthumb.class.php" on line 279
+    [1] => ResolveFilenameToAbsolute() NOT prepending $this->config_document_root () to $filename (/assets/gallery/1/1.mp4) resulting in ($AbsoluteFilename = "/assets/gallery/1/1.mp4") in file "phpthumb.class.php" on line 1409
+    [2] => resolvePath: /assets/gallery/1/1.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [3] => resolvePath: iteration, path=/assets/gallery/1/1.mp4, base path = /var/www/html/assets/components/gallery in file "phpthumb.class.php" on line 1262
+    [4] => open_basedir: "" in file "phpthumb.class.php" on line 1229
+    [5] => resolvePath: stop at component 5 in file "phpthumb.class.php" on line 1278
+    [6] => resolvePath: stop at path=/assets/gallery/1/1.mp4 in file "phpthumb.class.php" on line 1281
+    [7] => resolvePath: no match, returning null in file "phpthumb.class.php" on line 1283
+    [8] => !$this->config_allow_src_above_docroot therefore setting "/assets/gallery/1/1.mp4" (outside "/var/www/html/assets/components/gallery") to null in file "phpthumb.class.php" on line 1454
+    [9] => setSourceFilename() set $this->sourceFilename to "" in file "phpthumb.class.php" on line 347
+    [10] => setSourceFilename(/var/www/html/assets/gallery/1/1.mp4) set $this->sourceFilename to "/var/www/html/assets/gallery/1/1.mp4" in file "phpthumb.class.php" on line 347
+    [11] => CleanUpCacheDirectory() set to purge (NULL days; NULL MB; NULL files) in file "phpthumb.class.php" on line 806
+    [12] => CleanUpCacheDirectory() skipped because "/var/www/html/assets/components/gallery/cache//phpThumbCacheStats.txt" is recently modified in file "phpthumb.class.php" on line 816
+    [13] => $AvailableImageOutputFormats = array(text;ico;bmp;wbmp;gif;png) in file "phpthumb.class.php" on line 1071
+    [14] => $this->thumbnailFormat staying as "png" because $this->config_output_format (jpeg) is not in $AvailableImageOutputFormats in file "phpthumb.class.php" on line 1086
+    [15] => $this->thumbnailFormat set to $this->f "png" in file "phpthumb.class.php" on line 1090
+    [16] => $this->thumbnailQuality set to "99" in file "phpthumb.class.php" on line 1100
+    [17] => resolvePath: /var/www/html/assets/gallery/1/1.mp4 (allowed_dirs: Array
+(
+)
+) in file "phpthumb.class.php" on line 1243
+    [18] => resolvePath: iteration, path=/var/www/html/assets/gallery/1/1.mp4, base path = /var/www/html in file "phpthumb.class.php" on line 1262
+    [19] => resolvePath: stop at component 8 in file "phpthumb.class.php" on line 1278
+    [20] => resolvePath: stop at path=/var/www/html/assets/gallery/1/1.mp4 in file "phpthumb.class.php" on line 1281
+    [21] => resolvePath: path parsed, over in file "phpthumb.class.php" on line 1287
+    [22] => $this->sourceFilename set to "/var/www/html/assets/gallery/1/1.mp4" in file "phpthumb.class.php" on line 988
+    [23] => SetCacheFilename() _src set from md5($this->sourceFilename) "/var/www/html/assets/gallery/1/1.mp4" = "2cfb51c4a27a809795e9b854c7ad7ea8" in file "phpthumb.class.php" on line 3693
+    [24] => SetCacheFilename() _par set from md5(_farC_zc1_h200_w200_dpi150) in file "phpthumb.class.php" on line 3732
+    [25] => starting ExtractEXIFgetImageSize() in file "phpthumb.class.php" on line 3486
+    [26] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 3498
+    [27] => getimagesize("/var/www/html/assets/gallery/1/1.mp4") failed in file "phpthumb.class.php" on line 3528
+    [28] => $this->useRawIMoutput=true after checking $UnAllowedParameters in file "phpthumb.class.php" on line 1723
+    [29] => phpThumb_tempnam() returning "/tmp/pThumbhi0RHG" in file "phpthumb.class.php" on line 4589
+    [30] => ImageMagickSwitchAvailable(thumbnail) = 0 in file "phpthumb.class.php" on line 1649
+    [31] => IMuseExplicitImageOutputDimensions = 0 in file "phpthumb.class.php" on line 1808
+    [32] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) FAILED with error "" in file "phpthumb.class.php" on line 1824
+    [33] => ImageMagickSwitchAvailable(density) = 0 in file "phpthumb.class.php" on line 1649
+    [34] => getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 2004
+    [35] => Remaining $this->fltr after ImageMagick: (array(0) { } ) in file "phpthumb.class.php" on line 2388
+    [36] => ImageMagick called as ('' '/var/www/html/assets/gallery/1/1.mp4[0]' -resize '200x200' png:'/tmp/pThumbhi0RHG' 2>&1) in file "phpthumb.class.php" on line 2410
+    [37] => ImageMagick failed with message (sh: 1: : Permission denied) in file "phpthumb.class.php" on line 2415
+    [38] => deleting "/tmp/pThumbhi0RHG" in file "phpthumb.class.php" on line 2447
+    [39] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3535
+    [40] => SetOrientationDependantWidthHeight() starting with ""x"" in file "phpthumb.class.php" on line 3465
+    [41] => SetOrientationDependantWidthHeight() setting w="200", h="200" in file "phpthumb.class.php" on line 3481
+    [42] => exif_thumbnail() does not exist, cannot extract EXIF thumbnail in file "phpthumb.class.php" on line 3590
+    [43] => EXIF thumbnail extraction: (size=0; type=""; 0x0) in file "phpthumb.class.php" on line 3594
+    [44] => starting SourceImageToGD() in file "phpthumb.class.php" on line 3863
+    [45] => starting ImageCreateFromFilename(/var/www/html/assets/gallery/1/1.mp4) in file "phpthumb.class.php" on line 3773
+    [46] => empty $filename or getimagesize(/var/www/html/assets/gallery/1/1.mp4) failed in file "phpthumb.class.php" on line 3827
+    [47] => Populating $rawimagedata in file "phpthumb.class.php" on line 3835
+    [48] => attempting ImageCreateFromStringReplacement($rawimagedata (584809 bytes), true) in file "phpthumb.class.php" on line 3849
+    [49] => ImageCreateFromStringReplacement() calling built-in imagecreatefromstring() in file "phpthumb.class.php" on line 4459
+    [50] => Not using EXIF thumbnail data because $this->exif_thumbnail_data is empty in file "phpthumb.class.php" on line 3935
+    [51] => $this->gdimg_source is still empty in file "phpthumb.class.php" on line 3987
+    [52] => ImageMagickThumbnailToGD() failed in file "phpthumb.class.php" on line 3989
+    [53] => phpThumb() v1.7.22-202312071641
+http://phpthumb.sourceforge.net
+
+Error messages disabled.
+
+edit phpThumb.config.php and (temporarily) set
+$PHPTHUMB_CONFIG['disable_debug'] = false;
+to view the details of this error in file "phpthumb.class.php" on line 4351
+    [54] => SourceImageToGD() failed in file "phpthumb.class.php" on line 427
+)
+
+[2024-06-06 11:48:25] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 187) PHP warning: filemtime(): stat failed for /var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_1.mp4.4f4748f3342a7dd1683caa8585ccae92.png
+[2024-06-06 11:48:25] (ERROR @ /var/www/html/core/components/gallery/processors/web/phpthumb.class.php : 199) PHP warning: file_get_contents(/var/www/html/assets/components/gallery/cache/_var_www_html_assets_gallery_1_1.mp4.4f4748f3342a7dd1683caa8585ccae92.png): failed to open stream: No such file or directory
+[2024-06-06 11:48:29] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:48:29] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:48:54] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:50:12] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:50:36] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+
+[2024-06-06 11:50:48] (ERROR @ /var/www/html/core/vendor/xpdo/xpdo/src/xPDO/Om/xPDOObject.php : 227) Error 42000 executing statement: 
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1' at line 1
+)
+

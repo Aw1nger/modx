@@ -1,19 +1,13 @@
 FROM php:7.4-apache
 
 # Установка необходимых инструментов и расширений PHP
-RUN apt-get update && apt-get install -y unzip wget \
-    && docker-php-ext-install pdo pdo_mysql mysqli
+RUN apt-get update && apt-get install -y libpng-dev zlib1g-dev libzip-dev  \
+    && docker-php-ext-install pdo pdo_mysql mysqli gd zip
 
-# Копирование MODX из официального релиза
-RUN wget https://modx.com/download/direct/modx-2.8.6-pl.zip -O modx.zip \
-    && unzip modx.zip -d /var/www/html/ \
-    && rm modx.zip \
-    && mv /var/www/html/modx-2.8.6-pl/* /var/www/html/ \
-    && rm -r /var/www/html/modx-2.8.6-pl
+WORKDIR /var/www/html
 
-# Настройка прав доступа
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html
+RUN chown -R www-data:www-data . \
+    && chmod -R 755 .
 
 # Настройка конфигурации Apache
 COPY apache-modx.conf /etc/apache2/sites-available/000-default.conf
