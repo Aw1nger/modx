@@ -5,6 +5,8 @@ services:
     image: mariadb:latest
     container_name: modx_db
     restart: unless-stopped
+    ports:
+      - "3306:3306"
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
       MYSQL_ROOT_HOST: "%"

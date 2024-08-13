@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/modx-3.0.5-pl/core/src" isTestSource="false" packagePrefix="MODX" />
+      <sourceFolder url="file://$MODULE_DIR$/src/manager/min/lib" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
